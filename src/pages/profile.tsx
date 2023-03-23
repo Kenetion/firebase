@@ -1,6 +1,3 @@
-import '../App.css';
-
-
 export const Profile = () => {
-    return <h1> THIS IS PROFILE PAGE </h1>
+    return <div><h1>THIS IS PROFILE PAGE</h1></div>
  }
