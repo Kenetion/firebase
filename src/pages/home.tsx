@@ -1,3 +1,57 @@
 export const Home = () => {
-    return <div><h1>THIS IS HOME PAGE</h1></div>
+    return (
+    <div>
+        <h1>THIS IS HOME PAGE THIS IS HOME PAGE THIS IS HOME PAGE THIS IS HOME PAGE THIS IS HOME PAGE THIS IS HOME PAGE </h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+        <h1>THIS IS HOME PAGE</h1>
+    </div>
+    );
 };

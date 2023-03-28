@@ -83,8 +83,34 @@
 }
 
 
-p {
+.loginText {
   color: yellow;
   font-weight: 600;
   
 }
+
+.userData {
+  display: inherit;
+  color: azure;
+  font-weight: 500;
+  width: 150px;
+  justify-content: center;
+  /* top: 1.5em; */
+  /* right: 2em; */
+}
+
+.userAvatar {
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+.userCred {
+  display: flexbox;
+  flex-direction: column;
+  position: sticky;
+  right: 1em;
+  align-items: center;
+  /* float: right; */
+}
+
