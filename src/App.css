@@ -7,6 +7,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: blueviolet;
 
@@ -114,3 +115,7 @@
   /* float: right; */
 }
 
+.parag { 
+  width: 300px;
+
+}
