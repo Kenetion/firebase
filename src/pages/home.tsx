@@ -4,8 +4,8 @@ import '../App.css';
 
 export const Home = () => {
     return (
-    <div>
-        <p className="parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consectetur illo esse dolor hic vitae adipisci repellat expedita accusantium rerum, pariatur natus debitis. Error animi, similique nulla laborum est provident?
+    <div className="parag">
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consectetur illo esse dolor hic vitae adipisci repellat expedita accusantium rerum, pariatur natus debitis. Error animi, similique nulla laborum est provident?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus ab quod, aliquid architecto asperiores officia labore porro fuga laborum voluptatibus reiciendis iste ipsa tempore. Necessitatibus ad eum aperiam? Voluptates!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illo facilis sequi deleniti unde delectus quo debitis numquam sed facere nihil maiores odit vel recusandae earum enim cumque molestiae! Modi!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel culpa nobis repellendus cum optio at porro ipsam sint illo? Veniam eum, ullam vel aut itaque debitis quasi reiciendis sit.

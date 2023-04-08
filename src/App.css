@@ -5,12 +5,9 @@
 
 .App {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  min-width: 100vw;
   background-color: blueviolet;
-
+  /* border: 20px red solid; */
 }
 
 .btn {
@@ -34,16 +31,7 @@
   margin-right: 20px;
 }
 
-.nav {
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: fit-content; */
-  padding: 20px;
-  font-size: 25px;
-}
+
 
 .lnk {
   text-decoration: none;
@@ -54,6 +42,7 @@
   margin: 3px;
   background-color: teal;
   border-radius: 25px;
+  align-items: center;
 }
 
 .lnk:hover {
@@ -87,17 +76,23 @@
 .loginText {
   color: yellow;
   font-weight: 600;
-  
+}
+
+
+
+.userCred {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: inherit;
+  right: 2%;
 }
 
 .userData {
-  display: inherit;
   color: azure;
   font-weight: 500;
   width: 150px;
-  justify-content: center;
-  /* top: 1.5em; */
-  /* right: 2em; */
+  text-align: center;
 }
 
 .userAvatar {
@@ -106,16 +101,29 @@
   width: 50px;
 }
 
-.userCred {
-  display: flexbox;
-  flex-direction: column;
-  position: sticky;
-  right: 1em;
-  align-items: center;
-  /* float: right; */
+.parag { 
+  /* border: 20px green solid; */
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.parag { 
-  width: 300px;
+.links {
+  display: flexbox;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+}
 
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+  /* border: 20px blue solid; */
+  height: fit-content;
 }

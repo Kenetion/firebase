@@ -5,7 +5,7 @@ import { NavBar } from './components/navbar';
 import { Home } from './pages/home';
 import { Profile } from './pages/profile';
 import { NotSpecified } from './pages/notspecified';
-import { Contact } from './pages/contact';
+import { CreatePost } from './pages/createpost';
 import { Login } from './pages/login';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/profile" element={<Profile />}/>
           <Route path="/login" element={<Login />}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/createpost" element={<CreatePost />}/>
           <Route path="*" element={<NotSpecified />}/>
         </Routes>
       </Router>
