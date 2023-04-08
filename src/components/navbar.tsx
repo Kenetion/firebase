@@ -14,20 +14,23 @@ export const NavBar = () => {
 
     return (
         <div className="nav">
+            <div className="links">
              <Link className="lnk" to="/"> HOME </Link>
              <Link className="lnk" to="/profile"> PROFILE </Link>
+             {!user ? (
              <Link className="lnk" to="/login"> LOGIN </Link>
-             <Link className="lnk" to="/contact"> CONTACT </Link>
-
-             <div className="nav userCred">
+             ) : (
+             <Link className="lnk" to="/createpost"> CREATE POST </Link>
+             )}
+            </div>
+            <div className="userCred">
                 {user && (
                 <>
                     <p className="userData "> { user?.displayName } </p>
                     <img className="userAvatar " src={user?.photoURL || ""} alt="user avatar" />
                     <button className="btn" onClick={signUserOut}> LOG OUT </button>
                 </>)}
-             </div>
+            </div>
         </div>
-  
     )
 }
