@@ -18,7 +18,7 @@ export const NavBar = () => {
              <Link className="lnk" to="/">HOME</Link>
              {/* <Link className="lnk" to="/profile"> PROFILE </Link> */}
              {!user ? (
-             <Link className="lnk" to="/login">LOGIN</Link>
+             <Link className="loginLnk" to="/login">LOGIN</Link>
              ) : (
              <Link className="lnk" to="/createpost">CREATE POST</Link>
              )}
@@ -28,7 +28,7 @@ export const NavBar = () => {
                 <>
                     <p className="userData "> { user?.displayName } </p>
                     <img className="userAvatar " src={user?.photoURL || ""} alt="user avatar" />
-                    <button className="btn logout" onClick={signUserOut}>LOG OUT</button>
+                    <button className="logout" onClick={signUserOut}>LOGOUT</button>
                 </>)}
             </div>
         </div>

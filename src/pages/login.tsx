@@ -15,9 +15,11 @@ export const Login = () => {
     }
 
     return (
-    <div className="login">
-        <p className="loginText">Login With Google To Continue</p>
-        <button className="btn" onClick={signInWithGoogle}> Login With Google </button>
-    </div>
+        <div className="login">
+            <p className="loginText">To proceed:</p>
+        <button type="button" className="login-with-google-btn" onClick={signInWithGoogle}>
+            Sign in with Google
+        </button>
+        </div>
     )
 };
