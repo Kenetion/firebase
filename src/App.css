@@ -14,13 +14,44 @@
 }
 
 .btn {
-  border: 2px red solid;
-  margin-right: 20px;
-  margin: 20px;
-  background-color: yellow;
-  font-weight: 700;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 .lnk {
   text-decoration: none;
@@ -35,35 +66,10 @@
 
 .lnk:hover {
   text-decoration: underline;
-  color: yellow;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
+  color: #f4511e;
 }
 
 
-
-.formField {
-  border: 2px solid red;
-  padding: 5px;
-  margin: 2px;
-  border-radius: 20px;
-  /* text-align: center; */
-  font-size: 16px;
-}
-
-
-
-
-.submit {
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
-}
 
 .error {
   color: red;
@@ -71,20 +77,12 @@
 }
 
 
-.loginText {
-  margin-top: 30px;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-
-
-
 .userCred {
   display: flex;
   flex-direction: row;
   position: absolute;
   justify-content: center;
+  align-items: center;
   right: 2%;
 
 }
@@ -121,24 +119,28 @@
   font-size: 40px;
 }
 
-.login {
-  margin-top: 30px;
+
+.loginBody {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  background-image: url(../src/images/loginBodyImg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-position: center;
+  height: 91vh;
 }
 
-.loginLnk {
-  position: absolute;
-  font-size: 30px;
-  right: 2%;
-  color: white;
-  text-decoration: none;
+.loginText {
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.692)
 }
 
-.loginLnk:hover {
-  color: yellow;
-}
 
 .nav {
   position: sticky;
@@ -161,11 +163,38 @@
 }
 
 
-.logout {
-  font-size: 20px;
-  margin-left: 10px;
-  
+.loginLnk {
+  position: absolute;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 2%;
+  color: white;
+  text-decoration: none;
 }
+
+.loginLnk:hover {
+  color: #f4511e;
+}
+
+
+.logoutImg {
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.logoutImg:hover {
+  border: 2px #f4511e solid;
+}
+
+
+.loginImg {
+  margin-left: 10px;
+}
+
 
 .title {
   text-align: center;
@@ -200,6 +229,7 @@
 }
 .login-with-google-btn:hover {
     box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    cursor: pointer;
   }
   
 .login-with-google-btn:active {
@@ -220,3 +250,49 @@
     box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
     cursor: not-allowed;
   }
+
+
+  .homePosts {
+    background-image: url(../src/images/postBodyImg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+  .homeText {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #f4511e;
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+
+  .formBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../src/images/formBodyImg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  
+  
+  
+  .formField {
+    height: 100vh;
+    width: auto;
+    border: 2px solid #f4511e;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+    /* text-align: center; */
+    font-size: 16px;
+  }
+
+  

@@ -15,7 +15,7 @@ export const Login = () => {
     }
 
     return (
-        <div className="login">
+        <div className="loginBody">
             <p className="loginText">To proceed:</p>
         <button type="button" className="login-with-google-btn" onClick={signInWithGoogle}>
             Sign in with Google

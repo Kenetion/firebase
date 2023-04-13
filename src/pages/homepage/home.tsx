@@ -1,8 +1,10 @@
 import '../../App.css';
 import { getDocs, collection } from 'firebase/firestore';
-import { db } from '../../config/firebase';
+import { auth, db } from '../../config/firebase';
 import { useEffect, useState } from 'react';
 import { Post } from './post';
+import { useAuthState } from 'react-firebase-hooks/auth';
+
 
 export interface IPost {
     id: string;
@@ -14,6 +16,7 @@ export interface IPost {
 
 export const Home = () => {
 
+    const [user] = useAuthState(auth);
 
     const [postsList, setPostsList] = useState<IPost[] | null>(null);
     const postsRef = collection(db, "posts");
@@ -35,9 +38,13 @@ export const Home = () => {
 
     return (
     <div>
-        {postsList?.map((post) => (
+        {!user ? (<div>
+            <h1 className='homeText'>Hi and welcome to the travelling blog where you can share stories about your travels</h1>
+        </div>) : (
+        <div className='homePosts'>{postsList?.map((post) => (
         <Post post={post} />
         ))}
+        </div>)}
     </div>
     );
 };
