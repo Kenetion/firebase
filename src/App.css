@@ -130,7 +130,8 @@
   background-attachment: fixed;  
   background-size: cover;
   background-position: center;
-  height: 91vh;
+  padding-top: 20em;
+  padding-bottom: 32.5em;
 }
 
 .loginText {
@@ -153,6 +154,7 @@
   /* border: 20px blue solid; */
   height: 50px;
   background-color: rgb(0, 0, 0);
+  background-image: url(/src/images/nav2.jpg);
 }
 
 .createPost {
@@ -280,13 +282,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 550px;
   }
   
   
   
   .formField {
-    height: 100vh;
-    width: auto;
     border: 2px solid #f4511e;
     padding: 5px;
     margin: 2px;
