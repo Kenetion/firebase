@@ -5,13 +5,17 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import { signOut } from "firebase/auth";
 import login_white  from "../images/login_white.png"
 import logout_white from "../images/logout_white.png"
+import { useNavigate } from "react-router-dom";
+
 
 
 export const NavBar = () => {
+    const navigate = useNavigate();
     const [user] = useAuthState(auth);
 
     const signUserOut = async () => {
         await signOut(auth);
+        navigate("/");
     }
 
     return (
