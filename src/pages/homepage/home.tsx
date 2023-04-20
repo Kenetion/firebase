@@ -6,6 +6,8 @@ import { Post } from './post';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 
+
+
 export interface IPost {
     id: string;
     userId: string;
@@ -26,7 +28,6 @@ export const Home = () => {
         setPostsList(data.docs.map((doc) => ({...doc.data(), id: doc.id})) as IPost[]);
     };
 
-
     useEffect (() => {
         getPosts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -39,7 +40,7 @@ export const Home = () => {
     return (
     <div>
         {!user ? (<div>
-            <h1 className='homeText'>Hi and welcome to the travelling blog where you can share stories about your travels</h1>
+            <h1 className='homeText'>Hi and welcome to the traveling blog where you can share stories about your travels</h1>
         </div>) : (
         <div className='homePosts'>{postsList?.map((post) => (
         <Post post={post} />
