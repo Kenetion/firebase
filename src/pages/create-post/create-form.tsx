@@ -43,12 +43,12 @@ export const CreateForm = () => {
     }
 
     return (
-            <form className="form" onSubmit={handleSubmit(onCreatePost)} >
-                <input className="formField title" placeholder="Title..." {...register("title")} />
+            <form className="formBody" onSubmit={handleSubmit(onCreatePost)} >
+                <input className="formField" placeholder="Title..." {...register("title")} />
                 <p className="error"> {errors.title?.message} </p>
                 <textarea className="formField" placeholder="Description..." {...register("description")} />
                 <p className="error"> {errors.description?.message} </p>
-                <input className="submit btn" type="submit"/>
+                <button className="btn"><span>Submit </span></button>
             </form>
     )
 }
