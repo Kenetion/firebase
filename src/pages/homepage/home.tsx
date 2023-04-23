@@ -40,7 +40,7 @@ export const Home = () => {
     return (
     <div>
         {!user ? (<div>
-            <h1 className='homeText'>Hi and welcome to the traveling blog where you can share stories about your travels</h1>
+            <h1 className='homeText'>Share your story with us!</h1>
         </div>) : (
         <div className='homePosts'>{postsList?.map((post) => (
         <Post post={post} />
